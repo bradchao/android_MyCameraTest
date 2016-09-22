@@ -2,6 +2,7 @@ package brad.tw.mycameratest;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         img.setImageBitmap(bmp);
     }
     private void afterTakePic2(){
+        Bitmap bmp = BitmapFactory.decodeFile(sdroot.getAbsolutePath() + "/brad.jpg");
+        img.setImageBitmap(bmp);
 
     }
 
